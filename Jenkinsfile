@@ -1,9 +1,9 @@
 pipeline {
   agent any
   stages {
-    stage('error') {
+    stage('Docker build') {
       steps {
-        echo 'echo Start build'
+        sh 'docker build'
       }
     }
   }
