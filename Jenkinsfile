@@ -4,7 +4,8 @@ pipeline {
     stage('Docker build') {
       steps {
         sh '''pwd
-ls -al'''
+ls -al
+docker build .'''
       }
     }
   }
